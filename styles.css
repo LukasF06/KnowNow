@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Oswald&display=swap");
+
+body {
+  background-image: linear-gradient(rgb(159, 159, 237), rgb(112, 112, 247));
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7vh;
+}
+
+.content-surface {
+  width: 82rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content-surface-r {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainsurface {
+  width: 83rem;
+  height: 45rem;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: 1s;
+}
+
+.logo {
+  font-family: "Oswald", "sans-serif";
+  font-size: 5rem;
+  color: rgb(0, 0, 182);
+  margin-bottom: 10rem;
+  display: flex;
+  margin-left: 25rem;
+}
+
+.starttext {
+  font-family: "Dosis", "sans-seriff";
+  font-size: 2rem;
+  color: black;
+  display: flex;
+  margin-bottom: 2rem;
+  margin-left: 4.5rem;
+  transition: 1s;
+}
+
+.lernsettitle {
+  font-family: "Oswald", "sans-serif";
+  font-size: 7rem;
+  color: rgb(0, 0, 182);
+  display: flex;
+  margin-left: 2.5rem;
+  margin-bottom: 7rem;
+}
+
+.questiontext {
+  font-family: "Oswald", "sans-serif";
+  font-size: 5rem;
+  color: rgb(139, 139, 236);
+  display: flex;
+  margin-left: 2.5rem;
+}
+
+.lernset {
+  width: 14rem;
+  height: 15rem;
+  padding: 10px;
+  background: rgb(191, 191, 255);
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  transition: 0.3s;
+}
+
+.lernsettext {
+  font-family: "Dosis", "sans-seriff";
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  display: flex;
+  height: 9rem;
+  cursor: pointer;
+}
+
+.popup-background {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup {
+  background-color: white;
+  margin: 12rem auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
+  width: 50rem;
+  height: 30rem;
+  text-align: center;
+}
+
+.popup-text {
+  font-family: "Dosis", "sans-seriff";
+  font-size: 3rem;
+  color: black;
+  padding: 4rem;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+  margin-left: 0.6rem;
+}
+
+.fa-arrow-right-from-bracket {
+  font-size: 2.5rem;
+  margin-left: 0.5rem;
+  color: rgb(240, 240, 240);
+  transition: 0.2s;
+}
+
+.fa-bars-progress {
+  font-size: 2.5rem;
+  margin-left: 0.5rem;
+  color: rgb(240, 240, 240);
+  transition: 0.2s;
+}
+
+.fa-plus {
+  font-size: 1.5rem;
+  margin-left: 0.55rem;
+  color: rgb(240, 240, 240);
+  transition: 0.2s;
+}
+
+.fa-check {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  color: rgb(240, 240, 240);
+  transition: 0.2s;
+}
+
+.fa-trash {
+  font-size: 1.5rem;
+  margin-left: 0.55rem;
+  color: rgb(148, 148, 255);
+  transition: 0.2s;
+}
+
+.fa-arrow-right {
+  font-size: 1.5rem;
+  margin-left: 0.5rem;
+  color: rgb(240, 240, 240);
+  transition: 0.2s;
+}
+
+.moveon-text {
+  color: rgb(240, 240, 240);
+  font-family: "Dosis", "sans-seriff";
+  font-size: 2rem;
+  padding: 3.25rem;
+}
+
+.more-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  background: rgb(247, 247, 247);
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 12rem;
+  margin-left: 2rem;
+  margin-right: 6rem;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+#create-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  box-sizing: border-box;
+  background: rgb(102, 102, 226);
+  border-radius: 27px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rem;
+  margin-left: 23rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#plus-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  background: rgb(102, 102, 226);
+  border-radius: 27px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#exit-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  box-sizing: border-box;
+  background: rgb(102, 102, 226);
+  border-radius: 27px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-left: 15rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#gameexit-btn {
+  width: 3.5rem;
+  height: 3.5rem;
+  box-sizing: border-box;
+  background: rgb(102, 102, 226);
+  border-radius: 27px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-left: 15rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#submit-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  background: rgb(102, 102, 226);
+  border-radius: 27px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#submitanswer-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  background: rgb(102, 102, 226);
+  border-radius: 27px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#moveon-btn {
+  width: 12rem;
+  height: 4rem;
+  box-sizing: border-box;
+  background: rgb(102, 102, 226);
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-left: 35rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  text-align: center;
+}
+
+#nameinput {
+  width: 20rem;
+  height: 2rem;
+  box-sizing: border-box;
+  border-radius: 7px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  border-color: black;
+  margin-left: 4.5rem;
+  font-family: "Dosis", "sans-seriff";
+  font-size: 1.3rem;
+}
+
+.delete-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  border-radius: 27px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-left: 5rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+#answerinput {
+  width: 65rem;
+  height: 5rem;
+  border: none;
+  border-bottom: 4px solid black;
+  outline: none;
+  display: flex;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+  font-family: "Dosis", "sans-seriff";
+  font-size: 2rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Hover effect */
+
+#create-btn:hover {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 22.5rem;
+}
+
+#exit-btn:hover {
+  width: 4rem;
+  height: 4rem;
+  margin-left: 14.5rem;
+}
+
+#gameexit-btn:hover {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0;
+}
+
+.fa-arrow-right-from-bracket:hover {
+  font-size: 3rem;
+  margin-left: 0.6rem;
+}
+
+.fa-bars-progress:hover {
+  font-size: 3rem;
+}
+
+.fa-plus:hover {
+  color: rgb(102, 102, 226);
+}
+
+#plus-btn:hover {
+  background: rgb(241, 241, 241);
+}
+
+.fa-check:hover {
+  color: rgb(102, 102, 226);
+}
+
+#submit-btn:hover {
+  background: rgb(241, 241, 241);
+}
+
+#submitanswer-btn:hover {
+  background: rgb(241, 241, 241);
+}
+
+.fa-arrow-right:hover {
+  color: rgb(102, 102, 226);
+}
+
+.delete-btn:hover {
+  width: 3rem;
+  height: 3rem;
+  margin-left: 4.5rem;
+}
+
+.fa-trash:hover {
+  font-size: 2rem;
+  margin-left: 0.625rem;
+}
+
+.lernset:hover {
+  margin: 0;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
