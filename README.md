@@ -10,4 +10,4 @@ In the future, I plan to make a second learning mode which should work like inde
 
 ## Pictures of the app:
 
-<img align="left" alt="Instagram" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" />
+<img align="left" alt="Instagram" width="500px" src="https://github.com/LukasF06/KnowNow/blob/master/img/KnowNow.png" />
