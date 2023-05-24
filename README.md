@@ -9,3 +9,5 @@ In the learning mode, the app will ask you your question and then you will have 
 In the future, I plan to make a second learning mode which should work like index cards or something like multiple choice.
 
 ## Pictures of the app:
+
+<img align="left" height="400px" src="https://i.postimg.cc/7Y6Cprg3/KnowNow.png">
