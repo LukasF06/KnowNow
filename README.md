@@ -10,6 +10,7 @@ In the future, I plan to make a second learning mode which should work like inde
 
 ## Pictures of the app:
 
-[<img width="1067px" height="800px" src="https://i.postimg.cc/7Y6Cprg3/KnowNow.png">][KnowNow1]
+<img alt="Instagram" width="500px" src="https://github.com/LukasF06/KnowNow/blob/master/img/KnowNow.png" />
+<br />
+<img alt="Instagram" width="500px" src="https://github.com/LukasF06/KnowNow/blob/master/img/KnowNow2.png" />
 
-[KnowNow1]: https://i.postimg.cc/7Y6Cprg3/KnowNow.png
