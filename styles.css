@@ -47,7 +47,14 @@ body {
   color: rgb(0, 0, 182);
   margin-bottom: 10rem;
   display: flex;
-  margin-left: 25rem;
+  margin-left: 6rem;
+}
+
+.logoimage {
+  height: 10rem;
+  margin-bottom: 4.5rem;
+  margin-right: 18rem;
+  transition: animationloop 3s;
 }
 
 .starttext {
@@ -138,14 +145,12 @@ body {
   font-size: 2.5rem;
   margin-left: 0.5rem;
   color: rgb(240, 240, 240);
-  transition: 0.2s;
 }
 
 .fa-bars-progress {
   font-size: 2.5rem;
   margin-left: 0.5rem;
   color: rgb(240, 240, 240);
-  transition: 0.2s;
 }
 
 .fa-plus {
@@ -166,7 +171,6 @@ body {
   font-size: 1.5rem;
   margin-left: 0.55rem;
   color: rgb(148, 148, 255);
-  transition: 0.2s;
 }
 
 .fa-arrow-right {
@@ -209,10 +213,11 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10rem;
-  margin-left: 23rem;
+  margin-left: 22.5rem;
+  margin-right: 5rem;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
+  transition: transform 0.1s;
 }
 
 #plus-btn {
@@ -244,7 +249,7 @@ body {
   margin-left: 15rem;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
+  transition: transform 0.1s;
 }
 
 #gameexit-btn {
@@ -260,7 +265,7 @@ body {
   margin-bottom: 0.5rem;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
+  transition: transform 0.1s;
 }
 
 #submit-btn {
@@ -307,7 +312,7 @@ body {
   margin-left: 35rem;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
+  transition: coloranimation 3s;
   text-align: center;
 }
 
@@ -337,7 +342,7 @@ body {
   margin-left: 5rem;
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
+  transition: transform 0.1s;
 }
 
 #answerinput {
@@ -362,33 +367,64 @@ body {
   }
 }
 
+@keyframes animationloop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes coloranimation {
+  0% {
+    background: rgb(102, 102, 226);
+  }
+  12.5% {
+    background: rgb(95, 95, 218);
+  }
+  25% {
+    background: rgb(88, 88, 207);
+  }
+  37.5% {
+    background: rgb(82, 82, 196);
+  }
+  50% {
+    background: rgb(76, 76, 186);
+  }
+  62.5% {
+    background: rgb(82, 82, 196);
+  }
+  75% {
+    background: rgb(88, 88, 207);
+  }
+  87.5% {
+    background: rgb(95, 95, 218);
+  }
+  100% {
+    background: rgb(102, 102, 226);
+  }
+}
+
 /* Hover effect */
 
+.logoimage:hover {
+  animation: animationloop 1s infinite;
+}
+
 #create-btn:hover {
-  width: 4rem;
-  height: 4rem;
-  margin-left: 22.5rem;
+  transform: scale(1.2);
 }
 
 #exit-btn:hover {
-  width: 4rem;
-  height: 4rem;
-  margin-left: 14.5rem;
+  transform: scale(1.2);
 }
 
 #gameexit-btn:hover {
-  width: 4rem;
-  height: 4rem;
-  margin-bottom: 0;
-}
-
-.fa-arrow-right-from-bracket:hover {
-  font-size: 3rem;
-  margin-left: 0.6rem;
-}
-
-.fa-bars-progress:hover {
-  font-size: 3rem;
+  transform: scale(1.2);
 }
 
 .fa-plus:hover {
@@ -416,14 +452,7 @@ body {
 }
 
 .delete-btn:hover {
-  width: 3rem;
-  height: 3rem;
-  margin-left: 4.5rem;
-}
-
-.fa-trash:hover {
-  font-size: 2rem;
-  margin-left: 0.625rem;
+  transform: scale(1.2);
 }
 
 .lernset:hover {
@@ -431,4 +460,8 @@ body {
   margin-bottom: 2rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+#moveon-btn:hover {
+  animation: coloranimation 5s infinite;
 }

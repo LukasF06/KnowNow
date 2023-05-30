@@ -59,7 +59,7 @@ function PrintGame(data) {
     
             const popuptext = document.createElement("div");
             popuptext.classList.add("popup-text");
-            popuptext.innerHTML = `Korrekt<br><br>Die Antwort ist <br>${data[0].answer[questionindex]}`;
+            popuptext.innerHTML = `Korrekt<br><br>Die Antwort ist <br>${data[0].answer[questionindex].fontcolor("green")}`;
     
             const moveonbtn = document.createElement("div");
             moveonbtn.id = "moveon-btn";
@@ -94,6 +94,22 @@ function PrintGame(data) {
 
 
         } else {
+            let difference = [];
+            let differenceCheck = 0;
+            let differenceSum = 0;
+            for(let i = 0; i < userinput.length; i++) {
+                if(userinput[i] != data[0].answer[questionindex][i]) {
+                    difference.push(differenceCheck);
+                }
+                differenceCheck ++;
+            }
+
+            difference.forEach(i => {
+                differenceSum += i;
+            });
+
+            console.log(differenceSum)
+
             const popupbackground = document.createElement("div");
             popupbackground.classList.add("popup-background");
     
@@ -102,7 +118,26 @@ function PrintGame(data) {
     
             const popuptext = document.createElement("div");
             popuptext.classList.add("popup-text");
-            popuptext.innerHTML = `Leider Falsch<br><br>Die richtige Antwort wäre <br>${data[0].answer[questionindex]}`;
+
+            let realWord = Array.from(data[0].answer[questionindex]);
+            let realWordSum = 0;
+
+            realWord.forEach(i => {
+                realWordSum ++;
+            })
+
+            console.log(realWordSum)
+
+            for(let i = 0; i < realWord.length; i++) {
+                if(difference.includes(i)) {
+                    let corrected = realWord[i].fontcolor("orange");
+                    realWord[i] = corrected;
+                }
+            }
+            
+            let correction = realWord.join("");
+
+            popuptext.innerHTML = `Leider Falsch<br><br>Die richtige Antwort wäre <br>${correction}`;
     
             const moveonbtn = document.createElement("div");
             moveonbtn.id = "moveon-btn";
